@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="administration.html">Administration</a>
+            <a href="add-members.html">Add Members</a>
+            <a href="view-members.html">View Members</a>
+            <a href="resources.html">Resources</a>
+            <a href="scores.html">Scores</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <!-- Left Side: Team Member Details Table -->
+        <section class="team-members">
+            <h3>Team Member Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Blood</th>
+                        <th>Year</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>O+</td>
+                        <td>3rd Year</td>
+                        <td><img src="path/to/image.jpg" alt="John's photo" class="member-photo"></td>
+                    </tr>
+                    <!-- Additional rows as needed -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Right Side: Grid Sections and Updates -->
+        <aside class="right-content">
+            <div class="info-grid">
+                <div class="info-box">Registration Details</div>
+                <div class="info-box">Payment Details</div>
+                <div class="info-box">Team Member Information</div>
+                <div class="info-box">Vehicle Number</div>
+            </div>
+
+            <div class="updates">
+                <h4>New Updates</h4>
+                <p>No new updates at the moment.</p>
+            </div>
+        </aside>
+    </main>
+
+</body>
+</html>

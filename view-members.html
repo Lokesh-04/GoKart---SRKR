@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Members</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="view-members.css"> <!-- Separate CSS for Add Members page -->
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="administration.html">Administration</a>
+            <a href="add-members.html">Add Members</a>
+            <a href="view-members.html" class="active">View Members</a>
+            <a href="resources.html">Resources</a>
+            <a href="scores.html">Scores</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <h1>Team Members</h1>
+
+        <!-- Table for registered members -->
+        <table class="members-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Blood</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="member1.jpg" alt="Member Image"></td>
+                    <td>John Doe</td>
+                    <td>B+</td>
+                    <td>
+                        <button onclick="location.href='view-members.html'" class="edit-btn">Edit</button>
+                    </td>
+                </tr>
+                <!-- Additional rows as needed -->
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
+
+

@@ -1,0 +1,120 @@
+/* Main Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+  margin-left: 430px; /* Sidebar width to prevent overlap */
+  padding: 20px;
+  width: 75%; /* Adjusts content width based on sidebar */
+  max-width: 800px; /* Optional max width for central alignment */
+  text-align: center; /* Center-aligns content within box */
+}
+
+/* Team Administration Section */
+.team-administration {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Team Drivers Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+table td {
+    font-size: 14px;
+    color: #555;
+}
+
+table td button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table td button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Row Hover Effect */
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    form label,
+    form input,
+    form select,
+    form button {
+        width: 100%;
+    }
+
+    table td button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

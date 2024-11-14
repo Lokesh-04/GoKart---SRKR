@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="administration.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="administration.html" class="active">Administration</a>
+            <a href="add-members.html">Add Members</a>
+            <a href="view-members.html">View Members</a>
+            <a href="resources.html">Resources</a>
+            <a href="scores.html">Scores</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <h1>Administration</h1>
+
+        <section class="team-administration">
+            <h2>Team Administration</h2>
+            <p>Members in "Team Administration" once added can only be changed by Webmaster. Write to brij.kishor@isnee.in, should you wish to change the dignitaries.</p>
+
+            <h3>Add New Members</h3>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="designation">Designation:</label>
+                <select id="designation" name="designation" required>
+                    <option value="team-captain">Team Captain</option>
+                    <option value="team-manager">Team Manager</option>
+                    <option value="faculty-advisor">Faculty Advisor</option>
+                    <option value="driver">Driver</option>
+                </select>
+
+                <button type="submit">Add Member</button>
+            </form>
+        </section>
+
+        <section class="team-drivers">
+            <h3>Team Drivers</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                        <th>Designation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123-456-7890</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                        <td>Driver</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>987-654-3210</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                        <td>Driver</td>
+                    </tr>
+                    <!-- Additional rows for other drivers -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

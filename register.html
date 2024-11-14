@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <!-- Full-page Background Image -->
+    <div class="background-image"></div>
+
+    <main class="register-main">
+        <h2>Create an Account</h2>
+        <form action="dashboard.html">
+
+            <!-- Category and Designation Side-by-Side -->
+            <div class="side-by-side">
+                <div>
+                    <label for="category">Select Category:&nbsp;&nbsp;</label>
+                    <select id="category" name="category" required>
+                        <option value="CV">CV</option>
+                        <option value="EV">EV</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="designation">Select Designation:&nbsp;&nbsp;</label>
+                    <select id="designation" name="designation" required>
+                        <option value="team-captain">Team Captain</option>
+                        <option value="team-member">Team Member</option>
+                        <option value="team-manager">Team Manager</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="team-name"> Team Name:</label>
+            <input type="text" id="team-name" name="team-name" required>
+
+            <label for="institute-name"> Institute Name:</label>
+            <input type="text" id="institute-name" name="institute-name" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Team E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone-number"> Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+
+            <div class="side-by-side">
+                <div>
+                    <label for="faculty-name">Faculty Advisor Name:</label>
+                    <input type="text" id="faculty-name" name="faculty-name" required>
+                </div>
+
+                <div>
+                    <label for="faculty-phone-number">Faculty Phone Number:</label>
+                    <input type="tel" id="fuculty-phone-number" name="faculty-phone-number" required>
+                </div>
+            </div>
+
+            <!-- City and Postal Code Side-by-Side -->
+            <div class="side-by-side">
+                <div>
+                    <label for="city">City of Institute:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div>
+                    <label for="postal-code">Institute Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal-code" required>
+                </div>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+</body>
+
+</html>

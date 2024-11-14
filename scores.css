@@ -1,0 +1,48 @@
+/* Main content styling for Scores page */
+.content {
+    display: flex;
+    flex-direction: column;
+  margin-left: 430px; /* Sidebar width to prevent overlap */
+  padding: 20px;
+  width: 75%; /* Adjusts content width based on sidebar */
+  max-width: 800px; /* Optional max width for central alignment */
+  text-align: center; /* Center-aligns content within box */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #e9ecef;
+}
+
+table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
